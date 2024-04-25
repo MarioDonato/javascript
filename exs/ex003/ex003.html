@@ -22,32 +22,22 @@
     </style>
     <title>Document</title>
 </head>
-<body><h1>ola, mundo!</h1>
+<body><h1>ola, mundo!</h1> <!--comentario em html -->
     <script>
-        alert('Minha Primeira Mensagem!')
-        confirm('Esta gostando do site?')
-        prompt('Qual seu nome?') /* null == nada */
+        var n1 = Number(window.prompt('digite um nuemro!'))
+        var n2 = Number(window.prompt('digite outro numero!'))
+        var s = n1 + n2
+        alert(`a soma de ${n1} e ${n2} eh ${s}!`)
 
-        // let n1 = 3
-        // var n2 = 6
-        // tantp var e let sao variaveis
+        //posso usar tanto o String(n1)
+        // ou usar o n1.tostring()
 
-        //var n1 = 'comer'
-        //let n2 = "nao"
-        //var n3 = `sim` 
-        //tanto '' "" `` tem diferenca
-        // variaveis nao podem comeca com numeros e nao pode espacos 
-        
-        // TODOS os numeros sao number - infinity e NaN
-        // palavras sao string
-        // true false sao boolean
-        //null 
-        //undefined
-        //object - array
-        //function
+        //para a formatacao de frases usando variaveis 
+        // USAMOS O `` e o ${}
 
-        //typeof 
-
+        // s.lenght saber o tamanho
+        // s.toUpperCase() maiusculas
+        // s.toLowerCase()
     </script>
 </body>
 </html>
