@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(52, 38, 110);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        strong{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando os estudos com DOM
+    </h1>
+    <p classe="gay">
+        Aqui vai o resultado
+    </p>
+    <p class="gay">
+        Aprendendo a usar o <strong>dom</strong> em <strong>javascript</strong>
+    </p>
+    <div id="men">
+        Clique em mim
+    </div>
+<script>
+    var p1 = document.getElementsByTagName('p')[1]
+    document.body.style.background = ''
+
+    document.write(`Esta escrito assim ${p1.innerText}`)
+
+    document.write(`Esta escrito assim ${p1.innerHTML}`)
+    
+    var id1 = document.getElementById('men')
+
+    /*id1.style.backgroundColor = 'black'
+
+    id1.innerText = 'estou aguardando'
+
+    document.getElementById('men').innerText = 'estou chuatando'
+
+    document.getElementsByClassName('gay')[0].innerText = 'wow'*/
+
+    //por marca, por id, por nome, por classe e por seletor
+
+    //por marc - getElementByTagName()
+
+    // por id / getElementById()
+
+    // por nome - getElementsByName()[]
+
+    // por classe = getElementsByclassname()[]
+
+    // por seletor - queryselector() e queryselectorall()
+
+    document.querySelector('div#men').innerHTML = 'chato'
+
+</script>
+</body>
+</html>
