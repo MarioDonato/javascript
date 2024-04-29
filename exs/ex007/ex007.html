@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        div#area{
+            font: normal 16px arial;
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+            padding: 3px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 10px
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+    <script>
+        //eventos 
+        // mouseenter,  mousemove, mousedown, mouseup, click e mouseout
+        //function acao(){
+        //    
+        //}
+        var a = document.querySelector('div#area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseleave', sair)
+
+        function clicar() {
+            a.innerHTML = 'clicou!'
+            a.style.background = 'red'
+        }
+        function entrar(){
+            a.style.background = 'green'
+        }
+        function sair(){
+            a.style.background = 'purple'
+            a.innerHTML = 'interaja...'
+        }
+
+    </script>
+</body>
+</html>
