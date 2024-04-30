@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Br ou nem?</title>
+</head>
+<body><h1>Vendo se vc eh br</h1>
+    
+    De que pais vc eh? <input name="seletor" id="seletor">
+    <input type="button" value="confirmar" onclick="pais()" >
+    <div id="res"></div>
+    
+    <script>
+        function pais() {
+        var in1 = document.querySelector('input#seletor')
+        var res = document.querySelector('div#res')
+        var in1 = String(in1.value)
+        if (in1 == 'br')
+            res.innerHTML = `Brasileiro`
+        else 
+            res.innerHTML = 'Estrangeiro'
+        }
+    </script>
+</body>
+</html>
