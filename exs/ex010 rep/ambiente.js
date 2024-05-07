@@ -11,6 +11,8 @@ var c = 1
     c++
 } while (c <= 6)*/
 
-for (var c = 1; c <= 2; c++){
+
+console.log(`lol`)
+for (var c = 1; c <= 5; c++){
     console.log(`tudo bem?, ${c} com o for`)
 }
