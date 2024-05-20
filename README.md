@@ -1,2 +1,3 @@
-# javascript
- Curso de javascript
+Ola, mundo!
+
+Minha jornada para aprender Javascript.
